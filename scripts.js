@@ -10,7 +10,7 @@ if (minutes<10){                        //add zero before single digit minutes
 let displayTime = hours + ":" + minutes + " "+ timeAbbr;    //put the time together
 $("#time").text(displayTime);       //display time on DOM
 
-// GALACTUS QUOTES - 19 items//
+// GALACTUS QUOTES 
 let quote = ['\"My Herald, the great hunger is upon me. Where is the next world upon which I can feed?\"',
              '\"My journey is ended! This planet shall sustain me until it has been drained of all elemental life! So speaks Galactus!\"',
              '\"I HUNGER!\"',
@@ -31,22 +31,17 @@ let quote = ['\"My Herald, the great hunger is upon me. Where is the next world 
              '\"I am Galactus. The be-all and end-all am I!\"',
              '\"You exist solely by the grace I have given and the leash you tug against. Or have you forgotten whom you serve, Little God?\"'
 ]
-
+//Select random quote for display
 let quoteNumb = Math.floor(Math.random() * 20);
-
 $("#quote").text(quote[quoteNumb]);
              
-
 //CALL FOR WEATHER CONDITIONS
 $.getJSON(
     "https://api.openweathermap.org/data/2.5/weather?q=texarkana&units=imperial&appid=610c6bd442f660648855be9d7080adc6",
     function(data){
-        
-       // let icon = "https://openweathermap.org/img/wn/" + data.weather[0].icon +".png"; //get icon
         let temp = Math.round(data.main.temp);  //get temp
         let weather = data.weather[0].main; //get weather condition
         //Display weather on DOM
-        // $("#icon").attr("src", icon);
         $("#temp").append(temp + " &deg;");
         $("#weather").append(weather);
 })
