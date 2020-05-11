@@ -1,8 +1,20 @@
-#icon{
-  max-width:100%;
+body{
+  background-image: url("img/galactus-lg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #weather-container{
   height:100vh;
+}
 
+#quote {
+  font-size:20px;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+  background-image:url(img/galactus-sm.jpg);
+  }
 }
