@@ -1,20 +1,45 @@
+
 body{
   background-image: url("img/galactus-lg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:cover; 
+  font-family: 'Lato', sans-serif;
+  font-size:10px;
+}
+
+h1 {
+  font-size:4.6em;
+}
+h2 {
+  font-size:3.2em;
+}
+
+p{
+  font-size:3.2em;
 }
 
 #weather-container{
   height:100vh;
 }
 
-#quote {
-  font-size:20px;
+
+@media only screen and (max-width: 768px){
+    p{
+      font-size:2.4em;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-  body{
-  background-image:url(img/galactus-sm.jpg);
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    h2 {
+      font-size:2.8em;
+    }
+    
+    p{
+      font-size:1.8em;
+    }
   }
-}
