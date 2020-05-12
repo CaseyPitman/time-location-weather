@@ -14,7 +14,7 @@ $("#time").text(displayTime);       //display time on DOM
 let quote = ['\"My Herald, the great hunger is upon me. Where is the next world upon which I can feed?\"',
              '\"My journey is ended! This planet shall sustain me until it has been drained of all elemental life! So speaks Galactus!\"',
              '\"I HUNGER!\"',
-             '\"I have come from the farthest reaches of space &mdash; to proclaim the doom of the human race!\"',
+             '\"I have come from the farthest reaches of space\u2014to proclaim the doom of the human race!\"',
              '\"I have need of a new Herald...\"',
              '\"I am power incarnate! To Galactus, nothing is impossible!\"',
              '\"Galactus does what Galactus must to survive.\"',
@@ -32,7 +32,8 @@ let quote = ['\"My Herald, the great hunger is upon me. Where is the next world 
              '\"You exist solely by the grace I have given and the leash you tug against. Or have you forgotten whom you serve, Little God?\"'
 ]
 //Select random quote for display
-let quoteNumb = Math.floor(Math.random() * 20);
+let quoteNumb = Math.floor(Math.random() * 19);
+console.log(quoteNumb)
 $("#quote").text(quote[quoteNumb]);
              
 //CALL FOR WEATHER CONDITIONS
