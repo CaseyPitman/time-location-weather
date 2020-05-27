@@ -23,6 +23,9 @@ p{
   height:100vh;
 }
 
+#image {
+  display:none;
+}
 
 @media only screen and (max-width: 768px){
     p{
