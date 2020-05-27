@@ -30,10 +30,10 @@ let quote = ['\"My Herald, the great hunger is upon me. Where is the next world 
              '\"I know not who or what they are below! I only know Galactus must feed!\"',
              '\"I am Galactus. The be-all and end-all am I!\"',
              '\"You exist solely by the grace I have given and the leash you tug against. Or have you forgotten whom you serve, Little God?\"'
-]
+            ]
+
 //Select random quote for display
 let quoteNumb = Math.floor(Math.random() * 19);
-console.log(quoteNumb)
 $("#quote").text(quote[quoteNumb]);
              
 //CALL FOR WEATHER CONDITIONS
