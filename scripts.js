@@ -38,7 +38,7 @@ $("#quote").text(quote[quoteNumb]);
              
 //CALL FOR WEATHER CONDITIONS
 $.getJSON(
-    "https://api.openweathermap.org/data/2.5/weather?q=texarkana&units=imperial&appid=610c6bd442f660648855be9d7080adc6",
+    "https://api.openweathermap.org/data/2.5/weather?q=texarkana&units=imperial&appid={MY_KEY}",
     function(data){
         let temp = Math.round(data.main.temp);  //get temp
         let weather = data.weather[0].main; //get weather condition
